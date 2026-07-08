@@ -18,7 +18,6 @@ class RoPE(nn.Module):
         return final_output
 
 class Head(nn.Module):
-
     def __init__(self, head_size, n_embd, dropout, block_size):
         super().__init__()
         self.key = nn.Linear(n_embd, head_size, bias=False)
